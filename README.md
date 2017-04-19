@@ -1,8 +1,9 @@
 # Apache Solr 入門 第３版　サンプルコード
 
-技術評論社
-Software Design plusシリーズ
+技術評論社 Software Design plusシリーズ
+
 『［改訂第3版］Apache Solr入門』
+
 http://gihyo.jp/book/2017/978-4-7741-8930-7
 
 付属のサンプル設定、コードです。
