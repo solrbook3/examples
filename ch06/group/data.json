@@ -1,0 +1,104 @@
+[
+    {
+	"id": "doc-1",
+	"pref_s": "東京",
+	"gen_s": "フレンチ",
+	"name_ja": "フレンチGINZA",
+	"point_i": 3
+    },
+    {
+	"id": "doc-2",
+	"pref_s": "千葉",
+	"gen_s": "イタリアン",
+	"name_ja": "カリーナ・カフェ",
+	"point_i": 1
+    },
+    {
+	"id": "doc-3",
+	"pref_s": "埼玉",
+	"gen_s": "中華",
+	"name_ja": "四川飯店",
+	"point_i": 2
+    },
+    {
+	"id": "doc-4",
+	"pref_s": "東京",
+	"gen_s": "中華",
+	"name_ja": "天龍神田",
+	"point_i": 3
+    },
+    {
+	"id": "doc-5",
+	"pref_s": "埼玉",
+	"gen_s": "和食",
+	"name_ja": "八重洲亭",
+	"point_i": 3
+    },
+    {
+	"id": "doc-6",
+	"pref_s": "千葉",
+	"gen_s": "フレンチ",
+	"name_ja": "リトルフレンチ",
+	"point_i": 3
+    },
+    {
+	"id": "doc-7",
+	"pref_s": "東京",
+	"gen_s": "フレンチ",
+	"name_ja": "フレンチカフェ",
+	"point_i": 4
+    },
+    {
+	"id": "doc-8",
+	"pref_s": "東京",
+	"gen_s": "イタリアン",
+	"name_ja": "ルーチェ丸の内",
+	"point_i": 2
+    },
+    {
+	"id": "doc-9",
+	"pref_s": "埼玉",
+	"gen_s": "フレンチ",
+	"name_ja": "リトルパリ",
+	"point_i": 3
+    },
+    {
+	"id": "doc-10",
+	"pref_s": "東京",
+	"gen_s": "和食",
+	"name_ja": "二子亭",
+	"point_i": 3
+    },
+    {
+	"id": "doc-11",
+	"pref_s": "千葉",
+	"gen_s": "中華",
+	"name_ja": "台南飯店",
+	"point_i": 4
+    },
+    {
+	"id": "doc-12",
+	"pref_s": "埼玉",
+	"gen_s": "和食",
+	"name_ja": "蕨食堂",
+	"point_i": 4
+    },
+    {
+	"id": "doc-13",
+	"pref_s": "東京",
+	"name_ja": "ガパオ",
+	"point_i": 2
+    },
+    {
+	"id": "doc-14",
+	"pref_s": "埼玉",
+	"name_ja": "インディオ",
+	"point_i": 3
+    },
+    {
+	"id": "doc-15",
+	"pref_s": "東京",
+	"name_ja": "ファラデー",
+	"point_i": 3
+    }
+]

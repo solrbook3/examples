@@ -1,0 +1,13 @@
+<add>
+	<doc>
+		<field name="id">http://sample.com/book?id=001</field>
+		<field name="title">Apache Solr 入門</field>
+		<field name="author">打田 智子</field>
+		<field name="author">大須賀 稔</field>
+		<field name="author">大杉 直也</field>
+		<field name="author">平賀 一昭</field>
+		<field name="author">西潟 一生</field>
+		<field name="author">西本 順平</field>
+		<field name="price">3888</field>
+	</doc>
+</add>

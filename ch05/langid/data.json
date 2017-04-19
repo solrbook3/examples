@@ -1,0 +1,22 @@
+[
+  {
+    "id": "en-1",
+    "title": "This is an English text.",
+    "body": "It is fine today."
+  },
+  {
+    "id": "de-1",
+    "title": "Dies ist deutscher Text.",
+    "body": "Es ist heute fein."
+  },
+  {
+    "id": "fr-1",
+    "title": "C'est texte français.",
+    "body": "C'est fin aujourd'hui."
+  },
+  {
+    "id": "ja-1",
+    "title": "これは日本語のテキストです。",
+    "body": "今日はいい天気です。"
+  }
+]

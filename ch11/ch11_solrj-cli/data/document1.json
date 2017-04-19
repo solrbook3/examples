@@ -1,0 +1,5 @@
+{
+  "id" : { "value" : "1" },
+  "title_txt_en" : { "value" : "SolrJ" },
+  "description_txt_en" : { "value" : "SolrJ is a client library for Solr." }
+}

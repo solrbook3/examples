@@ -1,0 +1,82 @@
+{
+"replace-field" : {
+	"name":"id",
+	"type":"string",
+	"indexed":"true",
+	"stored":"true",
+	"required":"true",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"title",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"summary",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"author",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"true"
+},
+"add-field" : {
+	"name":"intended_reader",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"true"
+},
+"add-field" : {
+	"name":"genre",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"true"
+},
+"add-field" : {
+	"name":"isbn",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"pub_time",
+	"type":"date",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"price",
+	"type":"tint",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+},
+"add-field" : {
+	"name":"pages",
+	"type":"tint",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false",
+	"multiValued":"false"
+}
+}

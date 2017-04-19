@@ -1,0 +1,5 @@
+{
+  "id" : { "value" : "2" },
+  "title_txt_en" : { "value" : "Solr" },
+  "description_txt_en" : { "value" : "Solr is a full-text search server." }
+}

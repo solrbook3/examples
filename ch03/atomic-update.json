@@ -1,0 +1,6 @@
+[
+ {"id": "http://sample.com/book?id=001",
+  "title": {"set":"Apache Solr 入門 改訂"},
+  "author": {"add":["西潟 一生"]}
+ }
+]

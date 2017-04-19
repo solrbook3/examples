@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+<project basedir="." default="compile" name="solrj-cli" xmlns:ivy="antlib:org.apache.ivy.ant">
+  <property name="target" value="1.8" />
+  <property name="source" value="1.8" />
+
+  <property name="project" value="solrj-cli" />
+  <property name="version" value="0.1.0" />
+
+  <property name="target.dir" value="target" />
+  <property name="build.dir" value="${target.dir}/classes" />
+
+  <property name="test.target.dir" value="test-target" />
+  <property name="test.build.dir" value="${test.target.dir}/classes" />
+
+  <property name="bin.dir" value="bin" />
+  <property name="lib.dir" value="lib" />
+  <property name="conf.dir" value="conf" />
+  <property name="src.dir" value="src/main/java" />
+  <property name="data.dir" value="data" />
+
+  <property name="test.lib.dir" value="test-lib" />
+  <property name="test.src.dir" value="src/test/java" />
+  <property name="test.resources.dir" value="src/test/resources" />
+
+  <property name="dist.dir" value="dist" />
+  <property name="package.dir" value="package" />
+
+  <!-- for Assertions mismatch -->
+  <property name="tests.asserts" value="true" />
+  <condition property="tests.asserts.args" value="-ea -esa" else="">
+    <istrue value="${tests.asserts}"/>
+  </condition>
+
+  <path id="compile.classpath">
+    <fileset dir="${lib.dir}" />
+  </path>
+
+  <path id="compile.test.classpath">
+    <pathelement path="${build.dir}" />
+    <fileset dir="${lib.dir}" />
+    <fileset dir="${test.lib.dir}" />
+  </path>
+
+  <path id="run.classpath">
+    <fileset dir="${lib.dir}" />
+  </path>
+
+  <path id="run.test.classpath">
+    <pathelement path="${build.dir}" />
+    <pathelement path="${test.build.dir}" />
+    <fileset dir="${lib.dir}" />
+    <fileset dir="${test.lib.dir}" />
+  </path>
+
+  <target name="clean" description="Clean project.">
+    <delete dir="${lib.dir}" />
+    <delete dir="${test.lib.dir}" />
+    <delete dir="${target.dir}" />
+    <delete dir="${test.target.dir}" />
+    <delete dir="${dist.dir}" />
+    <delete dir="${package.dir}" />
+  </target>
+
+  <target name="resolve" description="Resolve dependencies." depends="clean">
+    <ivy:retrieve conf="compile" pattern="${lib.dir}/[artifact]-[revision].[ext]"/>
+    <ivy:retrieve conf="test" pattern="${test.lib.dir}/[artifact]-[revision].[ext]"/>
+  </target>
+
+  <target name="compile" description="Compile project." depends="resolve">
+    <mkdir dir="${build.dir}" />
+    <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" classpathref="compile.classpath" />
+  </target>
+
+  <target name="test" description="Test project." depends="compile">
+    <mkdir dir="${test.build.dir}" />
+    <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false" classpathref="compile.test.classpath" />
+  	
+    <copy file="${test.resources.dir}/log4j.properties" todir="${test.build.dir}"/>
+
+    <junit fork="true" printsummary="true" maxmemory="512m" haltonfailure="yes">
+      <formatter type="plain" usefile="false" />
+      <classpath refid="run.test.classpath" />
+      <batchtest fork="yes">
+        <fileset dir="${test.src.dir}" includes="**/*Test.java" />
+      </batchtest>
+      <!-- for Assertions mismatch -->
+      <jvmarg line="${tests.asserts.args}"/>
+      <sysproperty key="tests.asserts" value="${tests.asserts}"/>
+    </junit>
+  </target>
+
+  <target name="jar" description="Create JAR files." depends="test">
+    <mkdir dir="${dist.dir}" />
+    <copy todir="${dist.dir}/lib">
+      <fileset dir="${lib.dir}" />
+    </copy>
+    <copy todir="${dist.dir}/conf">
+      <fileset dir="${conf.dir}" />
+    </copy>
+  	<copy todir="${dist.dir}/data">
+      <fileset dir="${data.dir}" />
+    </copy>
+  	<jar destfile="${dist.dir}/${project}-${version}.jar" basedir="${build.dir}" />
+  </target>
+
+  <target name="package" description="Create package." depends="jar">
+    <mkdir dir="${package.dir}" />
+  	<copy file="README.md" todir="${package.dir}/${project}-${version}"/>
+  	<copy file="LICENSE" todir="${package.dir}/${project}-${version}"/>
+    <copy todir="${package.dir}/${project}-${version}/bin">
+      <fileset dir="${bin.dir}" />
+    </copy>
+  	<copy file="${dist.dir}/${project}-${version}.jar" todir="${package.dir}/${project}-${version}"/>
+    <copy todir="${package.dir}/${project}-${version}/lib">
+      <fileset dir="${dist.dir}/lib" />
+    </copy>
+    <copy todir="${package.dir}/${project}-${version}/conf">
+      <fileset dir="${dist.dir}/conf" />
+    </copy>
+  	<copy todir="${package.dir}/${project}-${version}/data">
+      <fileset dir="${dist.dir}/data" />
+    </copy>
+  	<chmod file="${package.dir}/${project}-${version}/bin/*.sh" perm="755"/>
+    <tar destfile="${package.dir}/${project}-${version}.tgz" compression="gzip" longfile="gnu">
+      <tarfileset dir="${package.dir}" mode="0755">
+      	<include name="**/*.sh"/>
+      </tarfileset>
+        <tarfileset dir="${package.dir}">
+        	<exclude name="**/*.sh"/>
+        </tarfileset>
+    </tar>
+  </target>
+	
+	
+  <target name="run" description="Run application.">
+    <java jar="${dist.dir}/${project}.jar" fork="true">
+      <arg value="-h" />
+    </java>
+  </target>
+</project>

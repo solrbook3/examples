@@ -1,0 +1,14 @@
+[
+  {
+    "id": "http://solrbook.example.com/docs/001.html",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "id": "http://solrbook.example.com/docs/002.html",
+    "content_type": "text/html; charset=Shift-JIS"
+  },
+  {
+    "id": "http://solrbook.example.com/docs/003.html",
+    "content_type": "text/html; charset=EUC-JP"
+  }
+]

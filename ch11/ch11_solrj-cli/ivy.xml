@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ivy-module>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<ivy-module version="2.0" xmlns:maven="http://ant.apache.org/ivy/maven">
+  <info organisation="com.github.mosuka.solr.example" module="solrj-example"/>
+  
+  <configurations defaultconfmapping="compile->master;test->master">
+    <conf name="compile" transitive="false"/>
+    <conf name="test" transitive="false"/>
+  </configurations>
+  
+  <dependencies>
+    <dependency org="org.apache.solr" name="solr-solrj" rev="6.3.0" conf="compile" />
+    <dependency org="commons-io" name="commons-io" rev="2.5" conf="compile" />
+    <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.4.1" conf="compile" />
+    <dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4.1" conf="compile" />
+    <dependency org="org.apache.httpcomponents" name="httpmime" rev="4.4.1" conf="compile" />
+    <dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.7.7" conf="compile" />
+    <dependency org="org.noggit" name="noggit" rev="0.6" conf="compile" />
+    <dependency org="org.slf4j" name="slf4j-api" rev="1.7.7" conf="compile" />
+    <dependency org="org.codehaus.woodstox" name="stax2-api" rev="3.1.4" conf="compile" />
+    <dependency org="org.codehaus.woodstox" name="woodstox-core-asl" rev="4.4.1" conf="compile" />
+    <dependency org="org.apache.zookeeper" name="zookeeper" rev="3.4.6" conf="compile" />
+
+    <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.5.4" conf="compile" />
+    <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.5.4" conf="compile" />
+    <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.5.4" conf="compile" />
+    <dependency org="net.sourceforge.argparse4j" name="argparse4j" rev="0.7.0" conf="compile" />
+    <dependency org="commons-lang" name="commons-lang" rev="2.6" conf="compile" />
+    <dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.7" conf="compile" />
+    <dependency org="log4j" name="log4j" rev="1.2.17" conf="compile" />
+
+    <!-- Dependencies for test -->
+    <dependency org="junit" name="junit" rev="4.10" conf="test" />
+
+    <dependency org="com.google.guava" name="guava" rev="14.0.1" conf="test" />
+    <dependency org="com.carrotsearch.randomizedtesting" name="randomizedtesting-runner" rev="2.4.0" conf="test" />
+
+    <dependency org="org.apache.lucene" name="lucene-analyzers-common" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-icu" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-kuromoji" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-morfologik" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-phonetic" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-smartcn" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-stempel" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-analyzers-uima" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-classification" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-backward-codecs" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-codecs" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-core" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-expressions" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-facet" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-grouping" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-join" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-highlighter" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-memory" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-misc" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-queries" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-queryparser" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-replicator" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-spatial" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-spatial3d" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-spatial-extras" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-suggest" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.lucene" name="lucene-test-framework" rev="6.3.0" conf="test" />
+
+    <dependency org="org.apache.solr" name="solr-analysis-extras" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-analytics" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-cell" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-core" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-clustering" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-dataimporthandler" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-dataimporthandler-extras" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-langid" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-map-reduce" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-morphlines-cell" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-morphlines-core" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-uima" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-velocity" rev="6.3.0" conf="test" />
+    <dependency org="org.apache.solr" name="solr-test-framework" rev="6.3.0" conf="test" />
+    
+    <dependency org="com.ibm.icu" name="icu4j" rev="56.1" conf="test" />
+    <dependency org="org.carrot2" name="morfologik-fsa" rev="2.1.0" conf="test" />
+    <dependency org="org.carrot2" name="morfologik-polish" rev="2.1.0" conf="test" />
+    <dependency org="org.carrot2" name="morfologik-stemming" rev="2.1.0" conf="test" />
+
+    <dependency org="org.apache.uima" name="uimaj-core" rev="2.3.1" conf="test" />
+    <dependency org="org.apache.uima" name="Tagger" rev="2.3.1" conf="test" />
+    <dependency org="org.apache.uima" name="WhitespaceTokenizer" rev="2.3.1" conf="test" />
+
+    <dependency org="org.carrot2.attributes" name="attributes-binder" rev="1.3.1" conf="test" />
+    <dependency org="org.carrot2.shaded" name="carrot2-guava" rev="18.0" conf="test" />
+    <dependency org="org.carrot2" name="carrot2-mini" rev="3.12.0" conf="test" />
+    <dependency org="org.simpleframework" name="simple-xml" rev="2.7.1" conf="test" />
+
+    <dependency org="javax.activation" name="activation" rev="1.1.1" conf="test" />
+    <dependency org="com.sun.mail" name="gimap" rev="1.5.1" conf="test" />
+    <dependency org="javax.mail" name="javax.mail-api" rev="1.5.1" conf="test" />
+
+    <dependency org="org.apache.james" name="apache-mime4j-core" rev="0.7.2" conf="test" />
+    <dependency org="org.apache.james" name="apache-mime4j-dom" rev="0.7.2" conf="test" />
+    <dependency org="org.aspectj" name="aspectjrt" rev="1.8.0" conf="test" />
+    <dependency org="org.bouncycastle" name="bcmail-jdk15" rev="1.45" conf="test" />
+    <dependency org="org.bouncycastle" name="bcprov-jdk15" rev="1.45" conf="test" />
+    <dependency org="de.l3s.boilerpipe" name="boilerpipe" rev="1.1.0" conf="test" />
+    <dependency org="org.apache.commons" name="commons-compress" rev="1.8.1" conf="test" />
+    <dependency org="org.apache.pdfbox" name="fontbox" rev="1.8.8" conf="test" />
+    <dependency org="com.googlecode.mp4parser" name="isoparser" rev="1.0.2" conf="test" />
+    <dependency org="com.pff" name="java-libpst" rev="0.8.1" conf="test" />
+    <dependency org="jdom" name="jdom" rev="1.0" conf="test" />
+    <dependency org="org.apache.pdfbox" name="jempbox" rev="1.8.8" conf="test" />
+    <dependency org="net.sourceforge.jmatio" name="jmatio" rev="1.0" conf="test" />
+    <dependency org="com.googlecode.juniversalchardet" name="juniversalchardet" rev="1.0.3" conf="test" />
+    <dependency org="com.drewnoakes" name="metadata-extractor" rev="2.6.2" conf="test" />
+    <dependency org="org.apache.pdfbox" name="pdfbox" rev="1.8.8" conf="test" />
+    <dependency org="org.apache.poi" name="poi" rev="3.11" conf="test" />
+    <dependency org="org.apache.poi" name="poi-ooxml" rev="3.11" conf="test" />
+    <dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.11" conf="test" />
+    <dependency org="org.apache.poi" name="poi-scratchpad" rev="3.11" conf="test" />
+    <dependency org="rome" name="rome" rev="1.0" conf="test" />
+    <dependency org="org.ccil.cowan.tagsoup" name="tagsoup" rev="1.2.1" conf="test" />
+    <dependency org="org.apache.tika" name="tika-core" rev="1.7" conf="test" />
+    <dependency org="org.apache.tika" name="tika-java7" rev="1.7" conf="test" />
+    <dependency org="org.apache.tika" name="tika-parsers" rev="1.7" conf="test" />
+    <dependency org="org.apache.tika" name="tika-xmp" rev="1.7" conf="test" />
+    <dependency org="org.gagravarr" name="vorbis-java-core" rev="0.6" conf="test" />
+    <dependency org="org.gagravarr" name="vorbis-java-tika" rev="0.6" conf="test" />
+    <dependency org="xerces" name="xercesImpl" rev="2.9.1" conf="test" />
+    <dependency org="org.apache.xmlbeans" name="xmlbeans" rev="2.6.0" conf="test" />
+    <dependency org="com.adobe.xmp" name="xmpcore" rev="5.1.2" conf="test" />
+    <dependency org="org.tukaani" name="xz" rev="1.5" conf="test" />
+
+    <dependency org="net.arnx" name="jsonic" rev="1.2.7" conf="test" />
+    <dependency org="com.cybozu.labs" name="langdetect" rev="1.1-20120112" conf="test" />
+
+    <dependency org="org.apache.hadoop" name="hadoop-common" rev="2.6.0" conf="test" />
+
+    <dependency org="net.sf.saxon" name="Saxon-HE" rev="9.6.0-2" conf="test" />
+    <dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-core" rev="2.6.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-hadoop-sequencefile" rev="1.1.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-saxon" rev="1.1.0" conf="test" />
+
+    <dependency org="org.kitesdk" name="kite-morphlines-json" rev="1.1.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-tika-core" rev="1.1.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-tika-decompress" rev="1.1.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-twitter" rev="1.1.0" conf="test" />
+
+    <dependency org="com.typesafe" name="config" rev="1.0.2" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-avro" rev="1.1.0" conf="test" />
+    <dependency org="org.kitesdk" name="kite-morphlines-core" rev="1.1.0" conf="test" />
+    <dependency org="com.codahale.metrics" name="metrics-core" rev="3.0.1" conf="test" />
+    <dependency org="com.codahale.metrics" name="metrics-healthchecks" rev="3.0.1" conf="test" />
+
+    <dependency org="org.apache.uima" name="AlchemyAPIAnnotator" rev="2.3.1" conf="test" />
+    <dependency org="org.apache.uima" name="OpenCalaisAnnotator" rev="2.3.1" conf="test" />
+    <dependency org="org.apache.uima" name="Tagger" rev="2.3.1" conf="test" />
+    <dependency org="org.apache.uima" name="WhitespaceTokenizer" rev="2.3.1" conf="test" />
+    <dependency org="commons-digester" name="commons-digester" rev="2.1" conf="test" />
+    <dependency org="org.apache.uima" name="uimaj-core" rev="2.3.1" conf="test" />
+
+    <dependency org="commons-beanutils" name="commons-beanutils-core" rev="1.8.3" conf="test" />
+    <dependency org="commons-collections" name="commons-collections" rev="3.2.2" conf="test" />
+    <dependency org="org.apache.velocity" name="velocity" rev="1.7" conf="test" />
+    <dependency org="org.apache.velocity" name="velocity-tools" rev="2.0" conf="test" />
+
+    <dependency org="org.locationtech.spatial4j" name="spatial4j" rev="0.6" conf="test" />
+
+    <dependency org="joda-time" name="joda-time" rev="2.2" conf="test" />
+    <dependency org="org.restlet.jee" name="org.restlet" rev="2.3.0" conf="test" />
+    <dependency org="org.restlet.jee" name="org.restlet.ext.servlet" rev="2.3.0" conf="test" />
+    
+    <dependency org="org.slf4j" name="jul-to-slf4j" rev="1.7.7" conf="test" />
+
+    <dependency org="javax.servlet" name="javax.servlet-api" rev="3.1.0" conf="test" />
+
+    <dependency org="org.eclipse.jetty" name="jetty-continuation" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-deploy" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-http" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-io" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-jmx" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-rewrite" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-security" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-server" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-servlet" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-servlets" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-util" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-webapp" rev="9.3.8.v20160314" conf="test" />
+    <dependency org="org.eclipse.jetty" name="jetty-xml" rev="9.3.8.v20160314" conf="test" />
+
+    <dependency org="commons-fileupload" name="commons-fileupload" rev="1.3.1" conf="test" />
+    <dependency org="commons-codec" name="commons-codec" rev="1.10" conf="test" />
+  </dependencies>
+</ivy-module>

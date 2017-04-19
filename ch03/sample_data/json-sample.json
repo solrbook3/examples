@@ -1,0 +1,6 @@
+[{
+"id": "http://sample.com/book?id=001",
+"title": "Apache Solr 入門",
+"author": ["打田 智子", "大須賀 稔", "大杉 直也", "平賀 一昭", "西潟 一生", "西本 順平"],
+"price": "3888"
+}]

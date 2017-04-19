@@ -1,0 +1,318 @@
+[
+    {
+	"id": "park001",
+	"name": "青山公園",
+	"prefecture": "東京都",
+	"area": 40018,
+	"activity": []
+    },
+    {
+	"id": "park002",
+	"name": "井の頭恩賜公園",
+	"prefecture": "東京都",
+	"area": 428389,
+	"activity": ["テニス","ボート"]
+    },
+    {
+	"id": "park003",
+	"name": "上野恩賜公園",
+	"prefecture": "東京都",
+	"area": 538506,
+	"activity": ["野球","テニス","ジョギング","ボート"]
+    },
+    {
+	"id": "park004",
+	"name": "大泉中央公園",
+	"prefecture": "東京都",
+	"area": 103000,
+	"activity": ["野球","ジョギング","バードウォッチング"]
+    },
+    {
+	"id": "park005",
+	"name": "小山内裏公園",
+	"prefecture": "東京都",
+	"area": 459211,
+	"activity": ["ジョギング","バーベキュー","ドッグラン","バードウォッチング"]
+    },
+    {
+	"id": "park006",
+	"name": "葛西臨海公園",
+	"prefecture": "東京都",
+	"area": 805861,
+	"activity": ["ジョギング","バーベキュー","バードウォッチング"]
+    },
+    {
+	"id": "park007",
+	"name": "亀戸中央公園",
+	"prefecture": "東京都",
+	"area": 103205,
+	"activity": ["テニス"]
+    },
+    {
+	"id": "park008",
+	"name": "木場公園",
+	"prefecture": "東京都",
+	"area": 238711,
+	"activity": ["テニス","ジョギング","バーベキュー","ドッグラン"]
+    },
+    {
+	"id": "park009",
+	"name": "旧岩崎邸庭園",
+	"prefecture": "東京都",
+	"area": 18235,
+	"activity": []
+    },
+    {
+	"id": "park010",
+	"name": "旧芝離宮恩賜庭園",
+	"prefecture": "東京都",
+	"area": 1139,
+	"activity": ["弓道"]
+    },
+    {
+	"id": "park011",
+	"name": "清澄庭園",
+	"prefecture": "東京都",
+	"area": 43656,
+	"activity": ["バードウォッチング"]
+    },
+    {
+	"id": "park012",
+	"name": "小石川後楽園",
+	"prefecture": "東京都",
+	"area": 70847,
+	"activity": []
+    },
+    {
+	"id": "park013",
+	"name": "小金井公園",
+	"prefecture": "東京都",
+	"area": 802341,
+	"activity": ["野球","テニス","弓道","サイクリング","バーベキュー","ドッグラン","バードウォッチング"]
+    },
+    {
+	"id": "park014",
+	"name": "駒沢オリンピック公園",
+	"prefecture": "東京都",
+	"area": 413573,
+	"activity": ["野球","テニス","弓道","ジョギング","サイクリング","ドッグラン","バードウォッチング"]
+    },
+    {
+	"id": "park015",
+	"name": "狭山公園",
+	"prefecture": "東京都",
+	"area": 234915,
+	"activity": ["ジョギング"]
+    },
+    {
+	"id": "park016",
+	"name": "汐入公園",
+	"prefecture": "東京都",
+	"area": 129369,
+	"activity": ["テニス","ジョギング","バーベキュー"]
+    },
+    {
+	"id": "park017",
+	"name": "芝公園",
+	"prefecture": "東京都",
+	"area": 122501,
+	"activity": ["野球","テニス","ジョギング"]
+    },
+    {
+	"id": "park018",
+	"name": "石神井公園",
+	"prefecture": "東京都",
+	"area": 225650,
+	"activity": ["野球","テニス","ボート","バードウォッチング"]
+    },
+    {
+	"id": "park019",
+	"name": "保土ヶ谷公園",
+	"prefecture": "神奈川県",
+	"area": 347000,
+	"activity": ["野球","サッカー","ラグビー","テニス","プール"]
+    },
+    {
+	"id": "park020",
+	"name": "秦野戸川公園",
+	"prefecture": "神奈川県",
+	"area": 507000,
+	"activity": ["野球","バーベキュー"]
+    },
+    {
+	"id": "park021",
+	"name": "大磯城山公園",
+	"prefecture": "神奈川県",
+	"area": 88000,
+	"activity": []
+    },
+    {
+	"id": "park022",
+	"name": "茅ケ崎里山公園",
+	"prefecture": "神奈川県",
+	"area": 352000,
+	"activity": ["バーベキュー"]
+    },
+    {
+	"id": "park023",
+	"name": "境川遊水地公園",
+	"prefecture": "神奈川県",
+	"area": 262000,
+	"activity": ["野球","サッカー","テニス"]
+    },
+    {
+	"id": "park024",
+	"name": "相模原公園",
+	"prefecture": "神奈川県",
+	"area": 260000,
+	"activity": ["ドッグラン"]
+    },
+    {
+	"id": "park025",
+	"name": "七沢森林公園",
+	"prefecture": "神奈川県",
+	"area": 650000,
+	"activity": ["バーベキュー"]
+    },
+    {
+	"id": "park026",
+	"name": "相模三川公園",
+	"prefecture": "神奈川県",
+	"area": 137000,
+	"activity": ["野球","サッカー"]
+    },
+    {
+	"id": "park027",
+	"name": "千葉公園",
+	"prefecture": "千葉県",
+	"area": 160000,
+	"activity": ["野球","テニス","プール","ボート"]
+    },
+    {
+	"id": "park028",
+	"name": "青葉の森公園",
+	"prefecture": "千葉県",
+	"area": 537000,
+	"activity": ["野球","テニス","弓道","ドッグラン"]
+    },
+    {
+	"id": "park029",
+	"name": "千葉ポートパーク",
+	"prefecture": "千葉県",
+	"area": 283000,
+	"activity": ["テニス","ジョギング","バーベキュー"]
+    },
+    {
+	"id": "park030",
+	"name": "昭和の森",
+	"prefecture": "千葉県",
+	"area": 1058000,
+	"activity": ["野球","サッカー","テニス","サイクリング","キャンプ"]
+    },
+    {
+	"id": "park031",
+	"name": "成田山公園",
+	"prefecture": "千葉県",
+	"area": 165000,
+	"activity": []
+    },
+    {
+	"id": "park032",
+	"name": "柏の葉公園",
+	"prefecture": "千葉県",
+	"area": 450000,
+	"activity": ["野球","テニス","ボート","バーベキュー"]
+    },
+    {
+	"id": "park033",
+	"name": "袖ヶ浦海浜公園",
+	"prefecture": "千葉県",
+	"area": 80000,
+	"activity": ["サイクリング"]
+    },
+    {
+	"id": "park034",
+	"name": "大宮公園",
+	"prefecture": "埼玉県",
+	"area": 350000,
+	"activity": ["野球","サッカー","テニス","弓道"]
+    },
+    {
+	"id": "park035",
+	"name": "七里総合公園",
+	"prefecture": "埼玉県",
+	"area": 66000,
+	"activity": []
+    },
+    {
+	"id": "park036",
+	"name": "さぎ山記念公園",
+	"prefecture": "埼玉県",
+	"area": 43500,
+	"activity": ["バーベキュー"]
+    },
+    {
+	"id": "park037",
+	"name": "与野公園",
+	"prefecture": "埼玉県",
+	"area": 51000,
+	"activity": ["ジョギング"]
+    },
+    {
+	"id": "park038",
+	"name": "三橋総合公園",
+	"prefecture": "埼玉県",
+	"area": 103000,
+	"activity": ["テニス","プール","ジョギング","バードウォッチング"]
+    },
+    {
+	"id": "park039",
+	"name": "秋葉の森総合公園",
+	"prefecture": "埼玉県",
+	"area": 30000,
+	"activity": ["サッカー","バーベキュー"]
+    },
+    {
+	"id": "park040",
+	"name": "秋ヶ瀬公園",
+	"prefecture": "埼玉県",
+	"area": 1000000,
+	"activity": ["野球","サッカー","テニス","バーベキュー"]
+    },
+    {
+	"id": "park041",
+	"name": "北浦和公園",
+	"prefecture": "埼玉県",
+	"area": 35000,
+	"activity": []
+    },
+    {
+	"id": "park042",
+	"name": "上尾丸山公園",
+	"prefecture": "埼玉県",
+	"area": 148800,
+	"activity": ["バーベキュー"]
+    },
+    {
+	"id": "park043",
+	"name": "上平公園",
+	"prefecture": "埼玉県",
+	"area": 121000,
+	"activity": ["野球","テニス","ジョギング"]
+    },
+    {
+	"id": "park044",
+	"name": "城山公園",
+	"prefecture": "埼玉県",
+	"area": 103000,
+	"activity": ["野球","サッカー","テニス","バーベキュー"]
+    },
+    {
+	"id": "park045",
+	"name": "所沢航空記念公園",
+	"prefecture": "埼玉県",
+	"area": 502000,
+	"activity": ["野球","サッカー","テニス","ドッグラン"]
+    }
+]
+
