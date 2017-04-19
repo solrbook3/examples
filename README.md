@@ -14,6 +14,10 @@ http://gihyo.jp/book/2017/978-4-7741-8930-7
 $ git clone git@github.com:solrbook3/examples.git
 ```
 
+```
+$ git clone https://github.com/solrbook3/examples.git
+```
+
 ダウンロード
 
 ```
