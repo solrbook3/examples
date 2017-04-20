@@ -24,6 +24,8 @@ $ git clone https://github.com/solrbook3/examples.git
 $ wget https://github.com/solrbook3/examples/archive/master.zip
 ```
 
+※対応 Solr バージョンは，書籍と同じ 6.3 です。
+
 不具合を見つけたら下記 Google Group までご連絡ください。
 
 [SIG Solr JP](https://groups.google.com/forum/?hl=ja#!forum/sig-solr-jp)
