@@ -304,6 +304,7 @@ $ ./bin/solrj-cli.sh -s http://localhost:8983/solr/collection1 -p -r delete 1
     "status" : 0
   }
 }
+```
 
 #### delete コマンドの実行 (SolrCloud)
 
@@ -329,9 +330,11 @@ $ ./bin/solrj-cli.sh -z localhost:2181 -R /solr -c collection1 -p -r delete 1
     "status" : 0
   }
 }
+```
 
 #### search コマンドで削除できたか確認
 
+```
 $ ./bin/solrj-cli.sh -s http://localhost:8983/solr/collection1 -p -r search -q 'id:1'
 {
   "request" : {
