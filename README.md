@@ -29,3 +29,6 @@ $ wget https://github.com/solrbook3/examples/archive/master.zip
 不具合を見つけたら下記 Google Group までご連絡ください。
 
 [SIG Solr JP](https://groups.google.com/forum/?hl=ja#!forum/sig-solr-jp)
+
+※ 正誤表はこちら: 
+https://github.com/solrbook3/errata/wiki/%5B%E6%94%B9%E8%A8%82%E7%AC%AC3%E7%89%88%5D-Apache-Solr-%E5%85%A5%E9%96%80-%E6%AD%A3%E8%AA%A4%E8%A1%A8
