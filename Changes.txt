@@ -1,2 +1,2 @@
 * 9 章シノニムファイルを修正 (2017.05.06)
-  - 本文と齟齬があったため，本文に合わせて `configsets/ch09_relevancy_configs/conf/lang/synonyms_ja.txt` を修正
+  - 本文と齟齬があったため，本文に合わせて configsets/ch09_relevancy_configs/conf/lang/synonyms_ja.txt を修正
